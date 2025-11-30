@@ -34,7 +34,6 @@ import {
     Settings2,
     SquareTerminal,
 } from 'lucide-react';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const DATA = {
     user: {
@@ -171,8 +170,7 @@ interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
 }
 
 export const AppSidebar = ({ className, ...props }: AppSidebarProps) => {
-    const isMobile = useIsMobile();
-    const [activeTeam, setActiveTeam] = React.useState(DATA.teams[0]);
+    const [activeTeam] = React.useState(DATA.teams[0]);
 
     if (!activeTeam) return null;
 
