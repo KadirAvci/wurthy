@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --panel-width: 100vw;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -249,4 +250,23 @@ button:hover {
   background-size: 600% 600%;
   animation: flow 3s ease infinite;
   z-index: 9999;
+}
+
+/*_______    Animation du background    ________*/
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.light\:hidden:not(.dark *) {
+  display: none
 }

@@ -59,18 +59,18 @@ export function TopNavigation() {
     const navClickHandle = (pageId: string) => { dispatch(setActivePage(pageId)) }
 
     return (
-        <div className={`sticky top-0 z-1000 w-full flex flex-row my-auto py-4 lg:px-8 border-b border-border backdrop-blur-sm`}>
+        <div className={`sticky top-0 z-1000 w-full flex flex-row my-auto py-4 lg:px-8 border-b border-border backdrop-blur-sm !bg-[#fff]`}>
             <SidebarTrigger></SidebarTrigger>
             <NavigationMenu viewport={false} className="min-w-full flex justify-start mx-auto px-4 lg:px-6 items-stretch lg:gap-4">
 
                 <NavigationMenuList>
 
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Astuces</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="!bg-[#fff]">Astuces</NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
-                                    <NavigationMenuLink asChild>
+                                    <NavigationMenuLink asChild className="!bg-[#fff]">
                                         <span
                                             className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                                             onClick={() => navClickHandle('outils-ia')}

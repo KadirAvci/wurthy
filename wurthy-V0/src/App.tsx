@@ -1,4 +1,3 @@
-import './App.css'
 import { useAppSelector } from './store/hook'
 import Dashboard from './pages/dashboard'
 import MainPanel from './components/features/MainPanel/MainPanel'
