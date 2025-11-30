@@ -11,7 +11,6 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { SidebarTrigger } from "@/components/animate-ui/components/radix/sidebar"
 
 import { useAppDispatch } from "@/store/hook";
 import { setActivePage } from "@/pages/routerSlice";
@@ -60,7 +59,6 @@ export function TopNavigation() {
 
     return (
         <div className={`sticky top-0 z-1000 w-full flex flex-row my-auto py-4 lg:px-8 border-b border-border backdrop-blur-sm !bg-[#fff]`}>
-            <SidebarTrigger></SidebarTrigger>
             <NavigationMenu viewport={false} className="min-w-full flex justify-start mx-auto px-4 lg:px-6 items-stretch lg:gap-4">
 
                 <NavigationMenuList>
@@ -98,7 +96,7 @@ export function TopNavigation() {
                     </NavigationMenuItem>
 
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Team</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="!bg-[#fff]">Team</NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                                 {components.map((component, index) => (
@@ -130,7 +128,7 @@ export function TopNavigation() {
                     </NavigationMenuItem>
 
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Page actuelle</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="!bg-[#fff]">Page actuelle</NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid w-[300px] gap-4">
                                 <li>

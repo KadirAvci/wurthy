@@ -182,7 +182,7 @@ export const AppSidebar = ({ className, ...props }: AppSidebarProps) => {
                     {/* Team Switcher */}
                     <SidebarMenu>
                         <SidebarMenuItem>
-                            <p className='!text-[#000]'>Team Switcher</p>
+                            <p className='!text-[#000]'>Wurthy</p>
                         </SidebarMenuItem>
                     </SidebarMenu>
                     {/* Team Switcher */}
