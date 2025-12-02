@@ -5,6 +5,7 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: 'https://media.wurth.fr/web_ressources/projects/test/wurthy/', // Chemin de base pour les assets (utilisez votre URL complète si nécessaire)
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
