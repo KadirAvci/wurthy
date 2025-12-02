@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --main-surface-tertiary: #fff;
   --panel-width: 100vw;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -51,6 +52,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/*
 body {
   margin: 0;
   display: flex;
@@ -58,6 +60,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+  */
 
 button {
   cursor: pointer;
@@ -235,5 +238,5 @@ button {
 }
 
 .light\:hidden:not(.dark *) {
-  display: none
+  display: none;
 }
