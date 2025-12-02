@@ -191,24 +191,24 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     }
 
     return (
-        <div className="relative">
+        <div className="tw:relative">
             <Sidebar {...props}>
                 <SidebarHeader>
                     <div onClick={() => navClickHandle('dashboard')}>
                         <Logo />
                     </div>
                 </SidebarHeader>
-                <SidebarContent className={"scroll-auto"} style={{ scrollbarWidth: "none" }}>
-                    <Collapsible defaultOpen className={"group/collapsible"}>
+                <SidebarContent className={"tw:scroll-auto"} style={{ scrollbarWidth: "none" }}>
+                    <Collapsible defaultOpen className={"tw:group/collapsible"}>
                         <SidebarGroup>
                             <SidebarGroupLabel>Eshop</SidebarGroupLabel>
-                            <SidebarGroupLabel asChild className={"group/label text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground text-sm"}>
+                            <SidebarGroupLabel asChild className={"tw:group/label tw:text-sidebar-foreground tw:hover:bg-sidebar-accent tw:hover:text-sidebar-accent-foreground tw:text-sm"}>
                                 <CollapsibleTrigger>
                                     Outils
-                                    <Icons.chevronRight className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
+                                    <Icons.chevronRight className="tw:ml-auto tw:transition-transform tw:group-data-[state=open]/collapsible:rotate-90" />
                                 </CollapsibleTrigger>
                             </SidebarGroupLabel>
-                            <CollapsibleContent className={'pl-6'}>
+                            <CollapsibleContent className={'tw:pl-6'}>
                                 <SidebarGroupContent>
                                     <SidebarMenu>
                                         <SidebarMenuItem>

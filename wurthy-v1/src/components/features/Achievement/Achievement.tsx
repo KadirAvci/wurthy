@@ -6,7 +6,7 @@ import trophies from "@/assets/images/custom-icon/gamer-trophy.svg";
 
 function Achievement() {
     return (
-        <div className={'col-span-2 lg:col-span-3'}>
+        <div className={'tw:col-span-2 tw:lg:tw:col-span-3'}>
             <Card className="items-stretch rounded-xl bg-card border border-border shadow-xs black/5">
                 <CardContent className="grow p-5">
                     <div className="flex flex-wrap px-5 lg:px-10 py-1 gap-2">

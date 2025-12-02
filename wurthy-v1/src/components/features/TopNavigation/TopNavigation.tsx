@@ -60,26 +60,26 @@ export function TopNavigation() {
     const navClickHandle = (pageId: string) => { dispatch(setActivePage(pageId)) }
 
     return (
-        <div className={`sticky top-0 z-1000 w-full flex flex-row my-auto py-4 lg:px-8 border-b border-border backdrop-blur-sm`}>
+        <div className={`tw:sticky tw:top-0 tw:z-1000 tw:w-full tw:flex tw:flex-row tw:my-auto tw:py-4 tw:lg:px-8 tw:border-b tw:border-border tw:backdrop-blur-sm`}>
             <SidebarTrigger></SidebarTrigger>
-            <NavigationMenu viewport={false} className="min-w-full flex justify-start mx-auto px-4 lg:px-6 items-stretch lg:gap-4">
+            <NavigationMenu viewport={false} className="tw:min-w-full tw:flex tw:justify-start tw:mx-auto tw:px-4 tw:lg:px-6 tw:items-stretch tw:lg:gap-4">
 
                 <NavigationMenuList>
 
                     <NavigationMenuItem>
                         <NavigationMenuTrigger>Astuces</NavigationMenuTrigger>
                         <NavigationMenuContent>
-                            <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                            <ul className="tw:grid tw:gap-2 tw:md:w-[400px] tw:lg:w-[500px] tw:lg:grid-cols-[.75fr_1fr]">
                                 <li className="row-span-3">
                                     <NavigationMenuLink asChild>
                                         <span
-                                            className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
+                                            className="tw:from-muted/50 tw:to-muted tw:flex tw:h-full tw:w-full tw:flex-col tw:justify-end tw:rounded-md tw:bg-linear-to-b tw:p-6 tw:no-underline tw:outline-hidden tw:select-none tw:focus:shadow-md"
                                             onClick={() => navClickHandle('outils-ia')}
                                         >
-                                            <div className="mt-4 mb-2 text-lg font-medium">
+                                            <div className="tw:mt-4 tw:mb-2 tw:text-lg tw:font-medium">
                                                 Outils IA
                                             </div>
-                                            <p className="text-muted-foreground text-sm leading-tight">
+                                            <p className="tw:text-muted-foreground tw:text-sm tw:leading-tight">
                                                 Trouver une liste non exhaustive d'outils IA qui peuvent vous aider au quotidien
                                             </p>
                                         </span>
@@ -101,13 +101,13 @@ export function TopNavigation() {
                     <NavigationMenuItem>
                         <NavigationMenuTrigger>Team</NavigationMenuTrigger>
                         <NavigationMenuContent>
-                            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                            <ul className="tw:grid tw:w-[400px] tw:gap-2 tw:md:w-[500px] tw:md:grid-cols-2 tw:lg:w-[600px]">
                                 {components.map((component, index) => (
                                     <li key={index}>
                                         <NavigationMenuLink asChild>
                                             <span onClick={() => navClickHandle(component.href)}>
-                                                <div className="text-sm leading-none font-medium">{component.title}</div>
-                                                <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                                                <div className="tw:text-sm tw:leading-none tw:font-medium">{component.title}</div>
+                                                <p className="tw:text-muted-foreground tw:line-clamp-2 tw:text-sm tw:leading-snug">
                                                     {component.description}
                                                 </p>
                                             </span>
@@ -133,28 +133,28 @@ export function TopNavigation() {
                     <NavigationMenuItem>
                         <NavigationMenuTrigger>Page actuelle</NavigationMenuTrigger>
                         <NavigationMenuContent>
-                            <ul className="grid w-[300px] gap-4">
+                            <ul className="tw:grid tw:w-[300px] tw:gap-4">
                                 <li>
                                     <NavigationMenuLink asChild>
                                         <span onClick={() => navClickHandle('')}>
-                                            <div className="font-medium">Projets en cours</div>
-                                            <div className="text-muted-foreground">
+                                            <div className="tw:font-medium">Projets en cours</div>
+                                            <div className="tw:text-muted-foreground">
                                                 Liste des projets en cours sur la page actuelle
                                             </div>
                                         </span>
                                     </NavigationMenuLink>
                                     <NavigationMenuLink asChild>
                                         <span onClick={() => navClickHandle('')}>
-                                            <div className="font-medium">A/B Test</div>
-                                            <div className="text-muted-foreground">
+                                            <div className="tw:font-medium">A/B Test</div>
+                                            <div className="tw:text-muted-foreground">
                                                 Liste des AB Test en cours sur la page actuelle
                                             </div>
                                         </span>
                                     </NavigationMenuLink>
                                     <NavigationMenuLink asChild>
                                         <span onClick={() => navClickHandle('')}>
-                                            <div className="font-medium">Prestataires</div>
-                                            <div className="text-muted-foreground">
+                                            <div className="tw:font-medium">Prestataires</div>
+                                            <div className="tw:text-muted-foreground">
                                                 Liste des fonctionnalités des prestataires en cours sur la page actuelle
                                             </div>
                                         </span>
@@ -189,8 +189,8 @@ function ListItem({
         <li {...props}>
             <NavigationMenuLink asChild>
                 <span onClick={() => navClickHandle(href)}>
-                    <div className="text-sm leading-none font-medium">{title}</div>
-                    <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                    <div className="tw:text-sm tw:leading-none tw:font-medium">{title}</div>
+                    <p className="tw:text-muted-foreground tw:line-clamp-2 tw:text-sm tw:leading-snug">
                         {children}
                     </p>
                 </span>
