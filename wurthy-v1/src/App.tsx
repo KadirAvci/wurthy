@@ -2,7 +2,7 @@ import "./App.css"
 import MainPanel from "./components/features/MainPanel/MainPanel";
 import { ThemeProvider } from "./components/features/ThemeProvider/ThemeProvider";
 import { useAppSelector } from "@/store/hook";
-import Dashboard from "@/pages/dashboard";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   const activePage = useAppSelector((state) => state.router.activePage)
