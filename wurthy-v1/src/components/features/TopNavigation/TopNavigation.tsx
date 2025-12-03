@@ -12,7 +12,7 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { SidebarTrigger } from "@/components/ui/sidebar"
-import { ModeToggle } from "@/components/features/ModeToggle/ModeToggle"
+//import { ModeToggle } from "@/components/features/ModeToggle/ModeToggle"
 
 import { useAppDispatch } from "@/store/hook";
 import { setActivePage } from "@/pages/routerSlice";
@@ -64,7 +64,7 @@ export function TopNavigation() {
             <SidebarTrigger></SidebarTrigger>
             <NavigationMenu viewport={false} className="tw:min-w-full tw:flex tw:justify-start tw:mx-auto tw:px-4 tw:lg:px-6 tw:items-stretch tw:lg:gap-4">
 
-                <NavigationMenuList>
+                <NavigationMenuList className="tw:flex tw:flex-row tw:justify-start tw:mx-auto tw:px-4 tw:lg:px-6">
 
                     <NavigationMenuItem>
                         <NavigationMenuTrigger>Astuces</NavigationMenuTrigger>
@@ -163,10 +163,12 @@ export function TopNavigation() {
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
+                    {/*
+                        <NavigationMenuItem>
+                            <ModeToggle></ModeToggle>
+                        </NavigationMenuItem>
+                    */}
 
-                    <NavigationMenuItem>
-                        <ModeToggle></ModeToggle>
-                    </NavigationMenuItem>
 
                 </NavigationMenuList>
             </NavigationMenu>

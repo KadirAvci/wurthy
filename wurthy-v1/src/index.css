@@ -102,6 +102,18 @@ button {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Ajouter des tailles de police personnalisées */
+  --text-3xs: 1rem;
+  --text-xxs: 1.25rem;
+  --text-xs: 1.5rem;
+  --text-sm: 1.75rem;
+  --text-md: 2rem;
+  --text-lg: 2.25rem;
+  --text-xl: 2.5rem;
+  --text-xxl: 3rem;
+
+  --spacing: 0.35rem;
 }
 
 .dark {

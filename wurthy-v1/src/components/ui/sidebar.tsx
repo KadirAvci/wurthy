@@ -27,8 +27,8 @@ import {
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
-const SIDEBAR_WIDTH = "16rem"
-const SIDEBAR_WIDTH_MOBILE = "18rem"
+const SIDEBAR_WIDTH = "16em"
+const SIDEBAR_WIDTH_MOBILE = "18em"
 const SIDEBAR_WIDTH_ICON = "3rem"
 const SIDEBAR_KEYBOARD_SHORTCUT = "b"
 
@@ -569,7 +569,7 @@ function SidebarMenuAction({
         "tw:peer-data-[size=lg]/menu-button:top-2.5",
         "tw:group-data-[collapsible=icon]:hidden",
         showOnHover &&
-          "tw:peer-data-[active=true]/menu-button:text-sidebar-accent-foreground tw:group-focus-within/menu-item:opacity-100 tw:group-hover/menu-item:opacity-100 tw:data-[state=open]:opacity-100 tw:md:opacity-0",
+        "tw:peer-data-[active=true]/menu-button:text-sidebar-accent-foreground tw:group-focus-within/menu-item:opacity-100 tw:group-hover/menu-item:opacity-100 tw:data-[state=open]:opacity-100 tw:md:opacity-0",
         className
       )}
       {...props}

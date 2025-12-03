@@ -27,7 +27,7 @@ function MainPanel({ children }: ManePanelProps) {
             <div id="sidePanel" className={`side-panel ${isActive ? "open" : ""}`}>
                 <SidebarProvider>
                     <AppSidebar className={isActive ? "tw:fixed" : "tw:absolute"} />
-                    <div className="tw:w-full">
+                    <div className="tw:w-full tw:lg:px-8">
                         <TopNavigation></TopNavigation>
                         {children}
                     </div>

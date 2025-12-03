@@ -1,7 +1,7 @@
 function Dashboard() {
     return (
-        <div>
-            Dashboard
+        <div className="tw:flex tw:flex-col tw:lg:px-8">
+            <h1>Dashboard</h1>
         </div>
     );
 }
