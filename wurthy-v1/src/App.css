@@ -1,0 +1,100 @@
+/*_________  Général  ___________*/
+button {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+/*_________  Side panel  ___________*/
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: calc(0px - var(--panel-width));
+    width: var(--panel-width);
+    height: 100vh;
+    background-color: var(--main-surface-tertiary);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+}
+
+.side-panel.open {
+    right: 0;
+}
+
+#sidePanel {
+    overflow: auto;
+}
+
+.side-panel-header h2 {
+    text-transform: uppercase;
+    width: 85%;
+}
+
+.side-panel-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.6);
+    padding: 20px 15px;
+    background: rgba(66, 66, 66, 0.9);
+    width: var(--panel-width);
+    position: fixed;
+}
+
+.side-panel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#closeBtn,
+#updateBtn {
+    background: #1e1e1e;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+#closeBtn:hover,
+#updateBtn:hover {
+    background: rgba(255, 255, 255, .8);
+    color: #000;
+}
+
+#togglePanelBtn {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-right: none;
+    padding: 4px;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(280deg, #e91e63, #2196f3, #0f0);
+    background-size: 600% 600%;
+    animation: flow 3s ease infinite;
+    z-index: 9999;
+}
+
+/*_______    Animation du background    ________*/
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.light\:hidden:not(.dark *) {
+    display: none;
+}
