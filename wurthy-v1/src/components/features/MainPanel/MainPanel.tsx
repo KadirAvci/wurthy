@@ -33,6 +33,7 @@ function MainPanel({ children }: ManePanelProps) {
                     </div>
                 </SidebarProvider>
             </div>
+
         </div>
     );
 }
