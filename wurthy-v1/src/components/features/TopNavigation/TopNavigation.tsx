@@ -12,7 +12,7 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { SidebarTrigger } from "@/components/ui/sidebar"
-//import { ModeToggle } from "@/components/features/ModeToggle/ModeToggle"
+import { ModeToggle } from "@/components/features/ModeToggle/ModeToggle"
 
 import { useAppDispatch } from "@/store/hook";
 import { setActivePage } from "@/pages/routerSlice";
@@ -163,11 +163,11 @@ export function TopNavigation() {
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
-                    {/*
-                        <NavigationMenuItem>
-                            <ModeToggle></ModeToggle>
-                        </NavigationMenuItem>
-                    */}
+
+                    <NavigationMenuItem>
+                        <ModeToggle></ModeToggle>
+                    </NavigationMenuItem>
+
 
 
                 </NavigationMenuList>

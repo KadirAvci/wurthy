@@ -8,7 +8,7 @@
     "css": "src/index.css",
     "baseColor": "neutral",
     "cssVariables": true,
-    "prefix": ""
+    "prefix": "tw"
   },
   "iconLibrary": "lucide",
   "aliases": {
@@ -21,6 +21,7 @@
   "registries": {
     "@animate-ui": "https://animate-ui.com/r/{name}.json",
     "@aceternity": "https://ui.aceternity.com/registry/{name}.json",
-    "@scrollxui": "https://www.scrollxui.dev/registry/{name}.json"
+    "@scrollxui": "https://www.scrollxui.dev/registry/{name}.json",
+    "@shadcn-studio": "https://shadcnstudio.com/r/{name}.json"
   }
 }
