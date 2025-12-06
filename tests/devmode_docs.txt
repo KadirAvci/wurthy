@@ -1,0 +1,67 @@
+Description : 
+    Application qui permet de gérer un objet complexe dans le local storage.La clé est "wa-config". Voici la structure de l'objet:
+    {
+        "modes": {
+            "dev": boolean,
+            "debug": boolean,
+            "devName": string
+        },
+        "devmode": boolean
+    }
+
+Features :
+    - Ajouter une fonctionnalité qui me permet de modifier devname dans l'objet.
+    - Ajouter une fonctionnalité qui me permet de modifier devmode dans l'objet. Grâce à un switch.
+    - Ajouter une fonctionnalité qui permet de modifier l'objet dans le local storage.
+    - Ajouter une fonctionnalité qui permet de supprimer l'objet du local storage.
+    - Ajouter une fonctionnalité qui permet de récupérer l'objet du local storage.
+    - Ajouter une fonctionnalité qui permet de vérifier si l'objet existe dans le local storage.
+    - Ajouter une fonctionnalité qui permet de nettoyer le local storage.
+    - Ajouter une fonctionnalité qui permet d'enregrister un historique des devmode.
+    - Je ne dois avoir qu'un seul devmode active.
+
+
+Fonctionnalité supplémentaire:
+    - ajouter des switches
+    - supprimer des switchs
+    - editer le label et la description d'un swith
+    - nouvelle propriété d'un swith: 
+        + un tableau d'objet "page_exemple" { id: number, nom: string, lien: string} ce tableau devrait aussi pouvoir être éditable
+
+        [
+            { 
+                id: 'mode1', 
+                label: 'Mode Standard', 
+                description: 'Configuration par défaut',
+                pages_exemple: [
+                    { id: 1, nom: 'Accueil', lien: '/home' },
+                    { id: 2, nom: 'Dashboard', lien: '/dashboard' }
+                ]
+            },
+            { 
+                id: 'mode2', 
+                label: 'Mode Avancé', 
+                description: 'Options supplémentaires',
+                pages_exemple: []
+            },
+            { 
+                id: 'mode3', 
+                label: 'Mode Expert', 
+                description: 'Contrôle total',
+                pages_exemple: [
+                    { id: 1, nom: 'Config', lien: '/config' }
+                ]
+            },
+        ]
+
+Requis:
+    - Demande de confirmation avant de supprimer un switch.
+    - le click sur les cartes ne dois pas activer le switch.
+    - ajouter un système de recherche qui permet de trouver un switch par son label et sa description.
+
+Technologies:
+    - React
+    - TailwindCSS
+    - Shadcn
+    - Redux pour la gestion des états
+    - LocalStorage
